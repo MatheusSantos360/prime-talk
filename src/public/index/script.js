@@ -1,3 +1,14 @@
+window.addEventListener("resize", () => {
+    if (window.innerWidth > 768) {
+        $(".menu").removeClass("active");
+        $(".line1").css("transform", "translateY(12px)");
+        $(".line2").css("display", "block");
+        $(".line3").css("transform", "translateY(-12px)");
+
+        $(".menu-content").css("height", "0px")
+    }
+})
+
 $(".menu").on("click", () => {
     if ($(".menu").hasClass("active")) {
         $(".menu").removeClass("active");

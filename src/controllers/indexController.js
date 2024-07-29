@@ -1,7 +1,7 @@
-const indexController = {
-  index: (req, res) => {
-    res.render('index');
-  },
+const registerController = {
+    index: (req, res) => {
+        res.render("index");
+    },
 };
 
-module.exports = indexController;
+module.exports = registerController;
